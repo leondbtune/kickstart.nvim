@@ -753,6 +753,11 @@ require('lazy').setup({
     end,
   },
 
+  -- Odoo
+  {
+    'whenrow/odoo-ls.nvim',
+    dependencies = { 'neovim/nvim-lspconfig' },
+  },
   { -- Autoformat
     'stevearc/conform.nvim',
     event = { 'BufWritePre' },
